@@ -2,6 +2,11 @@
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
 
+$xcode:  #F5F0E9;
+$ruby:   #9B111E;
+$pry:    #408000;
+$git:    #EC3720;
+$heroku: #4C4972;
 
 .home {
 
@@ -23,27 +28,26 @@
     h3 {
       margin-top: 20vh;
       color: rgb(231, 231, 231);
-      // text-shadow: 3px 2px 0px rgba(0, 0, 0, 0.62);
     }
 
     &--1 {
-      background-color: #F5F0E9;
+      background-color: $xcode;
     }
 
     &--2 {
-      background-color: #9B111E;
+      background-color: $ruby;
     }
 
     &--3 {
-      background-color: #408000;
+      background-color: $pry;
     }
 
     &--4 {
-      background-color: #EC3720;
+      background-color: $git;
     }
 
     &--5 {
-      background-color: #4C4972;
+      background-color: $heroku;
     }
   }
 }

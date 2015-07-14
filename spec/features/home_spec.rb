@@ -36,4 +36,14 @@ feature 'Home :' do
     click_link('Set up Git')
     expect(page).to have_content('Git Set Up')
   end
+
+  scenario 'When I hover a column, it add the right class', js: :true do
+    visit '/'
+    find('.home__col--1').hover
+    within 'div.home__col--1' do
+      expect(page).to have_css('.home__col--hover')
+      expect(page).to have_css('.home__col--other')
+    end
+  end
+
 end

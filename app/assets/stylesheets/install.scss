@@ -8,6 +8,16 @@
 .carousel {
   height: 100vh;
   position: relative;
+
+  &__1 {
+    background-color: lightblue;
+  }
+
+  &-control.left, .carousel-control.right  {
+    background-image: none!important;
+    background-repeat: repeat-x;
+  }
+
 }
 
 .step {
