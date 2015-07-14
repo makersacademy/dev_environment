@@ -25,17 +25,9 @@
     transition: 0.8s all ease-out;
 
     h3 {
-      margin-top: 70%;
+      margin-top: 20vh;
       color: rgb(231, 231, 231);
       // text-shadow: 3px 2px 0px rgba(0, 0, 0, 0.62);
-    }
-
-    &--hover {
-      width: 30vw !important;
-    }
-
-    &--other {
-      width: 17.7vw !important;
     }
 
     &--1 {
@@ -63,11 +55,42 @@
 @media (max-width: 992px) {
   .home {
     &__col {
-      height: 33.333vh;
+      height: 60vh !important;
+
+      &--hover {
+        width: 100% !important;
+      }
+
+      &--other {
+        width: 100% !important;
+      }
     }
 
     &__col h3 {
       margin-top: 10%;
     }
+
+  }
+}
+
+
+@media (max-width: 992px) {
+  .home {
+    &__col {
+      height: 60vh !important;
+
+      &--hover {
+        width: 100% !important;
+      }
+
+      &--other {
+        width: 100% !important;
+      }
+    }
+
+    &__col h3 {
+      margin-top: 10%;
+    }
+
   }
 }
