@@ -10,4 +10,5 @@ $(document).ready(function() {
       $(this).removeClass('home__col--other, home__col--hover');
       $('.home__col').not($(this)).removeClass('home__col--other');
    });
+   
 });

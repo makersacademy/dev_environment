@@ -8,7 +8,7 @@ require 'rails_helper'
 #     it "concats two strings with spaces" do
 #       expect(helper.concat_strings("this","that")).to eq("this that")
 #     end
-#   end
+#   endrake routes
 # end
 RSpec.describe InstallHelper, type: :helper do
 end

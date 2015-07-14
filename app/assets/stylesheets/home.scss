@@ -4,18 +4,6 @@
 
 
 .home {
-  &__h1 {
-    text-align: center;
-    width: 100%;
-    font-size: 15px;
-    background-color: rgba(255, 255, 255, 0.54);
-    height: 40px;
-    margin-top: 0px;
-    margin-bottom: 0px;
-    padding-top: 10px;
-    position: absolute;
-    z-index: 99;
-  }
 
   &__col {
 
@@ -23,6 +11,14 @@
     padding: 20px;
     text-align: center;
     transition: 0.8s all ease-out;
+
+    &--hover {
+      width:30vw !important;
+    }
+
+    &--other {
+      width: 17.8vw !important;
+    }
 
     h3 {
       margin-top: 20vh;
@@ -51,28 +47,6 @@
     }
   }
 }
-
-@media (max-width: 992px) {
-  .home {
-    &__col {
-      height: 60vh !important;
-
-      &--hover {
-        width: 100% !important;
-      }
-
-      &--other {
-        width: 100% !important;
-      }
-    }
-
-    &__col h3 {
-      margin-top: 10%;
-    }
-
-  }
-}
-
 
 @media (max-width: 992px) {
   .home {
