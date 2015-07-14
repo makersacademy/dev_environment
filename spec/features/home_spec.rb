@@ -40,10 +40,9 @@ feature 'Home :' do
   scenario 'When I hover a column, it add the right class', js: :true do
     visit '/'
     find('.home__col--1').hover
-    within 'div.home__col--1' do
+    find '.home__col--hover'
       expect(page).to have_css('.home__col--hover')
       expect(page).to have_css('.home__col--other')
-    end
   end
 
 end
