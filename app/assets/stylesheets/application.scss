@@ -17,6 +17,7 @@
  @import "home";
  @import "install";
  @import "animate";
+ @import "font-awesome";
 
 .header__h1 {
   text-align: center;
@@ -29,6 +30,11 @@
   padding-top: 10px;
   position: absolute;
   z-index: 99;
+
+  a {
+    color: black;
+    margin-right: 20px;
+  }
 }
 
  .col-xs-15,
