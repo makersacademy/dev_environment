@@ -7,31 +7,31 @@ feature 'Home :' do
     expect(page).to have_content 'Dev Environment Setup'
   end
 
-  scenario 'When I click on the link of the col 1 I go to the right page' do
+  xscenario 'When I click on the link of the col 1 I go to the right page' do
     visit '/'
     click_link('Set up Xcode')
     expect(page).to have_content('Xcode Set Up')
   end
 
-  scenario 'When I click on the link of the col 2 I go to the right page' do
+  xscenario 'When I click on the link of the col 2 I go to the right page' do
     visit '/'
     click_link('Set up Ruby')
     expect(page).to have_content('Ruby & Rvm Set Up')
   end
 
-  scenario 'When I click on the link of the col 3 I go to the right page' do
+  xscenario 'When I click on the link of the col 3 I go to the right page' do
     visit '/'
     click_link('Set up Pry')
     expect(page).to have_content('Pry Set Up')
   end
 
-  scenario 'When I click on the link of the col 4 I go to the right page' do
+  xscenario 'When I click on the link of the col 4 I go to the right page' do
     visit '/'
     click_link('Set up Heroku')
     expect(page).to have_content('Heroku Set Up')
   end
 
-  scenario 'When I click on the link of the col 5 I go to the right page' do
+  xscenario 'When I click on the link of the col 5 I go to the right page' do
     visit '/'
     click_link('Set up Homebrew')
     expect(page).to have_content('Homebrew Set Up')

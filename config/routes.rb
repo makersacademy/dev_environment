@@ -1,12 +1,13 @@
 Rails.application.routes.draw do
 
-  root 'home#index'
-
-  get 'xcode', to: 'install#xcode'
-  get 'ruby-and-rvm', to: 'install#ruby_and_rvm'
-  get 'pry', to: 'install#pry'
-  get 'heroku', to: 'install#heroku'
-  get 'homebrew', to: 'install#homebrew'
+  root'home#index'
+  get 'essential', to: 'essential#index', path: '/essential-tools'
+  get 'useful', to: 'useful#index', path: '/useful-tools'
+  get 'xcode', to: 'install#xcode', path: '/essential-tools/install/xcode'
+  get 'ruby-and-rvm', to: 'install#ruby_and_rvm', path: '/essential-tools/install/ruby-and-rvm'
+  get 'pry', to: 'install#pry', path: '/essential-tools/install/pry'
+  get 'heroku', to: 'install#heroku', path: '/essential-tools/install/heroku'
+  get 'homebrew', to: 'install#homebrew', path: '/essential-tools/install/homebrew'
 
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".
