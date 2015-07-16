@@ -15,5 +15,7 @@
 //= require bootstrap-sprockets
 //= require turbolinks
 //= require wow
+//= require jquery.pjax
 //= require_tree .
   new WOW().init();
+  $(document).pjax('a', '#pjax_container');

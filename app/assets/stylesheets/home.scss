@@ -2,11 +2,11 @@
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
 
-$xcode:  #F5F0E9;
-$ruby:   #9B111E;
-$pry:    #408000;
-$git:    #EC3720;
-$heroku: #4C4972;
+$xcode:    #F5F0E9;
+$homebrew: rgba(214, 174, 118, 0.75);
+$ruby:     rgba(155, 17, 30, 0.75);
+$pry:      rgba(248, 125, 73, 0.85);
+$heroku:   rgba(76, 73, 115, 0.85);
 
 .home {
 
@@ -16,6 +16,11 @@ $heroku: #4C4972;
     padding: 20px;
     text-align: center;
     transition: 0.8s all ease-out;
+
+    a {
+      color: white;
+      text-underline: none;
+    }
 
     &--hover {
       width:30vw !important;
@@ -43,13 +48,20 @@ $heroku: #4C4972;
     }
 
     &--4 {
-      background-color: $git;
+      background-color: $homebrew;
     }
 
     &--5 {
       background-color: $heroku;
     }
   }
+}
+
+.home .header__h1 {
+  font-size: 15px;
+  display: inline;
+  margin-left: 0 auto !important;
+  margin-left: 16vh;
 }
 
 @media (max-width: 992px) {
@@ -70,5 +82,12 @@ $heroku: #4C4972;
       margin-top: 10%;
     }
 
+  }
+}
+
+@media (max-width: 600px) {
+  .home .header__h1, .header__h1 {
+    float: left;
+    margin-left: 20px;
   }
 }

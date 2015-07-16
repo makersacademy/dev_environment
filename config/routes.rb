@@ -6,7 +6,7 @@ Rails.application.routes.draw do
   get 'ruby-and-rvm', to: 'install#ruby_and_rvm'
   get 'pry', to: 'install#pry'
   get 'heroku', to: 'install#heroku'
-  get 'git', to: 'install#git'
+  get 'homebrew', to: 'install#homebrew'
 
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".

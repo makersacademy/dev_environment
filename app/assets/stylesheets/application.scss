@@ -19,17 +19,46 @@
  @import "animate";
  @import "font-awesome";
 
-.header__h1 {
+.header {
   text-align: center;
   width: 100%;
-  font-size: 15px;
-  background-color: rgba(255, 255, 255, 0.54);
   height: 40px;
+  position: absolute;
+  z-index: 99;
+  background-color: rgba(255, 255, 255, 0.54);
   margin-top: 0px;
   margin-bottom: 0px;
   padding-top: 10px;
-  position: absolute;
-  z-index: 99;
+
+  .fa {
+    font-size: 17px;
+  }
+
+  .fa-home {
+    float: left;
+    margin-left: 20px;
+    margin-right: 20px;
+  }
+
+  &__h1 {
+    font-size: 15px;
+    display: inline;
+    margin-left: 0 auto!important;
+    width: auto;
+    margin: 0 auto;
+  }
+
+  &__socials {
+    float: right;
+    margin-right: 20px;
+    margin-left: -20px;
+  }
+
+  &__share {
+    margin-right: 20px;
+    margin-left: -20px;
+    font-weight: 500;
+  }
 
   a {
     color: black;

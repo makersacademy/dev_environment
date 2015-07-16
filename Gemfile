@@ -12,6 +12,8 @@ gem 'bootstrap-sass'
 gem 'wow-rails'
 gem 'animate-rails'
 gem 'font-awesome-rails'
+gem 'pjax_rails'
+
 
 group :development, :test do
   gem 'byebug'

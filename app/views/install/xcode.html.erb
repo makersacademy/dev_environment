@@ -1,9 +1,22 @@
-<h1 class="wow fadeInDown header__h1">
+<header class="wow fadeInDown  header">
   <%= link_to root_path do %>
     <i class="fa fa-home"></i>
   <% end %>
-  Xcode Set Up
-</h1>
+  <h1 class="header__h1">
+    Xcode Set Up
+  </h1>
+  <span class="header__socials">
+    <span class="header__share">
+      SHARE
+    </span>
+    <%= link_to "http://facebook.com" do %>
+      <i class="fa fa-facebook"></i>
+    <% end %>
+    <%= link_to "http://twitter.com" do %>
+      <i class="fa fa-twitter"></i>
+    <% end %>
+  </span>
+</header>
 <div id="carousel-example-generic" class="carousel carousel__1 slide" data-interval="false" data-ride="carousel">
   <!-- Indicators -->
   <ol class="carousel-indicators">
