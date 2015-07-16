@@ -1,93 +1,15 @@
 // Place all the styles related to the home controller here.
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
-
-$xcode:    #F5F0E9;
-$homebrew: rgba(214, 174, 118, 0.75);
-$ruby:     rgba(155, 17, 30, 0.75);
-$pry:      rgba(248, 125, 73, 0.85);
-$heroku:   rgba(76, 73, 115, 0.85);
-
 .home {
 
-  &__col {
-
-    height: 100vh;
-    padding: 20px;
+  &__essential {
+    height: 50vh;
     text-align: center;
-    transition: 0.8s all ease-out;
-
-    a {
-      color: white;
-      text-underline: none;
-    }
-
-    &--hover {
-      width:30vw !important;
-    }
-
-    &--other {
-      width: 17.8vw !important;
-    }
-
-    h3 {
-      margin-top: 20vh;
-      color: rgb(231, 231, 231);
-    }
-
-    &--1 {
-      background-color: $xcode;
-    }
-
-    &--2 {
-      background-color: $ruby;
-    }
-
-    &--3 {
-      background-color: $pry;
-    }
-
-    &--4 {
-      background-color: $homebrew;
-    }
-
-    &--5 {
-      background-color: $heroku;
-    }
+    vertical-align: middle;
+    display: table-cell;
+    width: 100%;
+    padding-left: calc(50vw - 100px);
   }
-}
 
-.home .header__h1 {
-  font-size: 15px;
-  display: inline;
-  margin-left: 0 auto !important;
-  margin-left: 16vh;
-}
-
-@media (max-width: 992px) {
-  .home {
-    &__col {
-      height: 60vh !important;
-
-      &--hover {
-        width: 100% !important;
-      }
-
-      &--other {
-        width: 100% !important;
-      }
-    }
-
-    &__col h3 {
-      margin-top: 10%;
-    }
-
-  }
-}
-
-@media (max-width: 600px) {
-  .home .header__h1, .header__h1 {
-    float: left;
-    margin-left: 20px;
-  }
 }
