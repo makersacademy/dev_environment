@@ -7,5 +7,4 @@ feature 'Home :' do
     expect(page).to have_content 'Essential tools'
     click_link 'Essential tools'
   end
-
 end

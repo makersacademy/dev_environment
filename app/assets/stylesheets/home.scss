@@ -3,13 +3,32 @@
 // You can use Sass (SCSS) here: http://sass-lang.com/
 .home {
 
-  &__essential {
+
+  &__article {
     height: 50vh;
     text-align: center;
     vertical-align: middle;
-    display: table-cell;
-    width: 100%;
-    padding-left: calc(50vw - 100px);
+    display: block;
+    width: 100vw;
+
+    a {
+      top: 50%;
+      position: relative;
+    }
+
+    &--essential {
+      background: pink;
+    }
+
+    &--useful {
+      background: lightblue;
+    }
   }
 
+}
+
+.home .header__h1 {
+  font-size: 15px;
+  display: inline;
+  margin-left: 86px;
 }

@@ -15,10 +15,10 @@
   </span>
 </header>
 <div class="row home">
-    <article class="home__essential">
-      <%= link_to 'Essential tools', essential_path %>
+    <article class="wow fadeInDown home__article home__article--essential">
+      <%= link_to 'Essential tools', essential_path, { :class=>"onClickAnimation" }  %>
     </article>
-    <article class="home__useful">
-      <%= link_to 'Useful tools', useful_path %>
+    <article class="wow fadeInUp home__article home__article--useful">
+      <%= link_to 'Useful tools', useful_path, { :class=>"onClickAnimation" }  %>
     </article>
 </div>
