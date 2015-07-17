@@ -1,3 +1,24 @@
 // Place all the styles related to the os controller here.
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
+.os {
+
+  &__col {
+    height: 100vh;
+    text-align: center;
+    padding-top: 40vh;
+    &--1 {
+      background-color: blueviolet;
+    }
+
+    &--2 {
+      background-color: lightblue;
+    }
+
+    &--3 {
+      background-color: lightgreen;
+    }
+
+  }
+
+}
