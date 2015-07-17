@@ -1,0 +1,30 @@
+<header class="wow fadeInDown  header">
+  <%= link_to root_path do %>
+    <i class="fa fa-home"></i>
+  <% end %>
+  <h1 class="header__h1">
+    Pick up your OS
+  </h1>
+  <span class="header__socials">
+    <span class="header__share">
+      SHARE
+    </span>
+    <%= link_to "http://facebook.com" do %>
+      <i class="fa fa-facebook"></i>
+    <% end %>
+    <%= link_to "http://twitter.com" do %>
+      <i class="fa fa-twitter"></i>
+    <% end %>
+  </span>
+</header>
+<div class="row home">
+  <article class="col-md-4">
+    <%= link_to 'Mac', essentialorusefulmac_path %>
+  </article>
+  <article class="col-md-4">
+    <%= link_to 'Windows', essentialorusefulwindows_path %>
+  </article>
+  <article class="col-md-4">
+    <%= link_to 'Linux', essentialorusefullinux_path %>
+  </article>
+</div>

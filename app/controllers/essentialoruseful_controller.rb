@@ -1,0 +1,2 @@
+class EssentialorusefulController < ApplicationController
+end

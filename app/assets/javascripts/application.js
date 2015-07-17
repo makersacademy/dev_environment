@@ -19,12 +19,14 @@
 //= require_tree .
 
 new WOW().init();
+
 $(document).pjax('a', '#pjax_container');
+
 $(document).on("pjax:success", function(e) {
   console.log("init wow");
   new WOW().init();
   console.log("prepping the hover");
-  //use mouse in and mouse out
+
   $('.essentialtools__col').hover(
     function() {
       console.log("doing the thing");
@@ -34,4 +36,4 @@ $(document).on("pjax:success", function(e) {
       $(this).removeClass('essentialtools__col--other, essentialtools__col--hover');
       $('.essentialtools__col').not($(this)).removeClass('essentialtools__col--other');
    });
-})
+});

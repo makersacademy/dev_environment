@@ -1,0 +1,2 @@
+class OsController < ApplicationController
+end

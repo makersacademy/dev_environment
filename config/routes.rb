@@ -1,13 +1,47 @@
 Rails.application.routes.draw do
-
+  #HomePage
   root'home#index'
-  get 'essential', to: 'essential#index', path: '/essential-tools'
-  get 'useful', to: 'useful#index', path: '/useful-tools'
-  get 'xcode', to: 'install#xcode', path: '/essential-tools/install/xcode'
-  get 'ruby-and-rvm', to: 'install#ruby_and_rvm', path: '/essential-tools/install/ruby-and-rvm'
-  get 'pry', to: 'install#pry', path: '/essential-tools/install/pry'
-  get 'heroku', to: 'install#heroku', path: '/essential-tools/install/heroku'
-  get 'homebrew', to: 'install#homebrew', path: '/essential-tools/install/homebrew'
+
+  #Pick up your OS page
+  get 'os', to: 'os#index', path: '/pick-up-your-os'
+
+  #Choose between essential || useful tools
+  get 'essentialorusefulmac', to: 'mac#index', path: '/mac'
+  get 'essentialorusefulwindows', to: 'windows#index', path: '/windows'
+  get 'essentialorusefullinux', to: 'linux#index', path: '/linux'
+
+  #Choose techonoligies
+  #Mac
+  get 'essentialmac', to: 'mac#essential', path: '/mac/essential-tools'
+  get 'usefulmac', to: 'mac#useful', path: '/mac/useful-tools'
+  #Windows
+  get 'essentialwindows', to: 'windows#essential', path: '/windows/essential-tools'
+  get 'usefulwindows', to: 'windows#useful', path: '/windows/useful-tools'
+  #Linux
+  get 'essentiallinux', to: 'linux#essential', path: '/linux/essential-tools'
+  get 'usefullinux', to: 'linux#useful', path: '/linux/useful-tools'
+
+  #Technologies pages
+  #Mac
+  get 'xcodemac', to: 'mac#xcode', path: '/mac/essential-tools/install/xcode'
+  get 'rubyandrvmmac', to: 'mac#ruby_and_rvm', path: '/mac/essential-tools/install/ruby-and-rvm'
+  get 'prymac', to: 'mac#pry', path: '/mac/essential-tools/install/pry'
+  get 'herokumac', to: 'mac#heroku', path: '/mac/essential-tools/install/heroku'
+  get 'homebrewmac', to: 'mac#homebrew', path: '/mac/essential-tools/install/homebrew'
+  #Windows
+  get 'xcodewindows', to: 'windows#xcode', path: '/windows/essential-tools/install/xcode'
+  get 'rubyandrvmwindows', to: 'windows#ruby_and_rvm', path: '/windows/essential-tools/install/ruby-and-rvm'
+  get 'prywindows', to: 'windows#pry', path: '/windows/essential-tools/install/pry'
+  get 'herokuwindows', to: 'windows#heroku', path: '/windows/essential-tools/install/heroku'
+  get 'homebrewwindows', to: 'windows#homebrew', path: '/windows/essential-tools/install/homebrew'
+  #Linux
+  get 'xcodelinux', to: 'linux#xcode', path: '/linux/essential-tools/install/xcode'
+  get 'rubyandrvmlinux', to: 'linux#ruby_and_rvm', path: '/linux/essential-tools/install/ruby-and-rvm'
+  get 'prylinux', to: 'linux#pry', path: '/linux/essential-tools/install/pry'
+  get 'herokulinux', to: 'linux#heroku', path: '/linux/essential-tools/install/heroku'
+  get 'homebrewlinux', to: 'linux#homebrew', path: '/linux/essential-tools/install/homebrew'
+
+
 
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".
