@@ -1,34 +1,3 @@
 // Place all the styles related to the home controller here.
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
-.home {
-
-
-  &__article {
-    height: 50vh;
-    text-align: center;
-    vertical-align: middle;
-    display: block;
-    width: 100vw;
-
-    a {
-      top: 50%;
-      position: relative;
-    }
-
-    &--essential {
-      background: pink;
-    }
-
-    &--useful {
-      background: lightblue;
-    }
-  }
-
-}
-
-.home .header__h1 {
-  font-size: 15px;
-  display: inline;
-  margin-left: 86px;
-}

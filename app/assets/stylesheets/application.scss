@@ -14,12 +14,15 @@
 
  @import "bootstrap-sprockets";
  @import "bootstrap";
- @import "home";
- @import "install";
- @import "essential";
  @import "animate";
  @import "font-awesome";
-
+ @import "home";
+ @import "essentialoruseful";
+ @import "linux";
+ @import "mac";
+ @import "os";
+ @import "windows";
+ 
 .header {
   text-align: center;
   width: 100%;
