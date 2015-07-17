@@ -25,7 +25,14 @@
   }
 
 }
-
+@media (max-width: 600px) {
+  .header__h1 {
+    float: left;
+    margin-left: 20px!important;
+    position: relative;
+    margin-top: 0px;
+  }
+}
 .essentialoruseful .header__h1 {
   font-size: 15px;
   display: inline;
