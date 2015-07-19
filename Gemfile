@@ -1,5 +1,7 @@
 source 'https://rubygems.org'
 
+ruby '2.2.1'
+
 gem 'rails', '4.2.3'
 gem 'pg'
 gem 'sass-rails', '~> 5.0'
@@ -13,7 +15,10 @@ gem 'wow-rails'
 gem 'animate-rails'
 gem 'font-awesome-rails'
 gem 'pjax_rails'
-
+gem 'rails_12factor'
+gem 'puma'
+gem "rack-timeout"
+gem 'foreman'
 
 group :development, :test do
   gem 'byebug'

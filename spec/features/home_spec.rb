@@ -9,5 +9,15 @@ feature 'Home :' do
     click_link("Let's start")
     expect(page).to have_content('Pick up your OS')
   end
+end
 
+
+feature 'page is called with AJAX' do
+  xscenario 'the user click on a link' do
+    visit ('/')
+    click_link "Let's start"
+    using_wait_time 10 do
+      page.should have_content("Mac")
+    end
+  end
 end
