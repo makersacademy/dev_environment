@@ -15,7 +15,7 @@ var gulp = require('gulp'),
     jsmin  = require("gulp-jsmin");
 
 gulp.task('default', function() {
-    gulp.start('styles', 'scripts','depcss', 'images', 'watch');
+    gulp.start('styles', 'scripts','depcss','depjs', 'images', 'watch');
 });
 
 gulp.task('images', function() {
@@ -40,6 +40,12 @@ gulp.task('depcss', function() {
     .pipe(concat('dependencies.css'))
     .pipe(minifycss())
     .pipe(rename({suffix: '.min'}))
+    .pipe(gulp.dest('../public/assets/dependencies'))
+});
+
+gulp.task('depjs', function() {
+  return gulp.src('assets/dependencies/js/*.js', { style: 'expanded' })
+    .pipe(concat('dependencies.min.js'))
     .pipe(gulp.dest('../public/assets/dependencies'))
 });
 
