@@ -1,0 +1,75 @@
+.header {
+  text-align: center;
+  width: 100%;
+  height: 40px;
+  position: absolute;
+  z-index: 99;
+  background-color: rgba(255, 255, 255, 0.54);
+  margin-top: 0px;
+  margin-bottom: 0px;
+  padding-top: 10px;
+  .fa {
+    font-size: 17px;
+  }
+  .fa-home {
+    float: left;
+    margin-left: 20px;
+    margin-right: 20px;
+  }
+
+  &__h1 {
+    font-size: 15px;
+    display: inline;
+    margin-left: 110px;
+    width: auto;
+  }
+
+  &__socials {
+    float: right;
+    margin-right: 20px;
+    margin-left: -20px;
+  }
+
+  &__share {
+    margin-right: 20px;
+    margin-left: -20px;
+    font-weight: 500;
+  }
+
+  a {
+    color: black;
+    margin-right: 20px;
+  }
+}
+
+ .col-xs-15,
+ .col-sm-15,
+ .col-md-15,
+ .col-lg-15 {
+     position: relative;
+     min-height: 1px;
+     padding-right: 10px;
+     padding-left: 10px;
+ }
+ .col-xs-15 {
+     width: 20%;
+     float: left;
+ }
+ @media (min-width: 768px) {
+ .col-sm-15 {
+         width: 20%;
+         float: left;
+     }
+ }
+ @media (min-width: 992px) {
+     .col-md-15 {
+         width: 20%;
+         float: left;
+     }
+ }
+ @media (min-width: 1200px) {
+     .col-lg-15 {
+         width: 20%;
+         float: left;
+     }
+ }

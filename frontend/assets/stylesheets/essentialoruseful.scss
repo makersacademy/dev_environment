@@ -1,0 +1,38 @@
+
+.essentialoruseful {
+
+  &__article {
+    height: 50vh;
+    text-align: center;
+    vertical-align: middle;
+    display: block;
+    width: 100vw;
+
+    a {
+      top: 50%;
+      position: relative;
+    }
+
+    &--essential {
+      background: pink;
+    }
+
+    &--useful {
+      background: lightblue;
+    }
+  }
+
+}
+@media (max-width: 600px) {
+  .header__h1 {
+    float: left;
+    margin-left: 20px!important;
+    position: relative;
+    margin-top: 0px;
+  }
+}
+.essentialoruseful .header__h1 {
+  font-size: 15px;
+  display: inline;
+  margin-left: 86px;
+}

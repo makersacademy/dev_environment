@@ -21,6 +21,7 @@
     "del": "^1.2.0",
     "gulp-autoprefixer": "^2.3.1",
     "gulp-cache": "^0.2.10",
+    "gulp-clean": "^0.3.1",
     "gulp-concat": "^2.6.0",
     "gulp-imagemin": "^2.3.0",
     "gulp-jshint": "^1.11.2",
@@ -29,6 +30,11 @@
     "gulp-notify": "^2.2.0",
     "gulp-rename": "^1.2.2",
     "gulp-ruby-sass": "^1.0.5",
+    "gulp-sass": "^2.0.4",
     "gulp-uglify": "^1.2.0"
+  },
+  "dependencies": {
+    "gulp-jsmin": "^0.1.5",
+    "gulp-uglifyjs": "^0.6.2"
   }
 }
