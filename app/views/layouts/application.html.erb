@@ -2,14 +2,14 @@
 <html>
 <head>
   <title>Dev Environment Set Up</title>
-<link rel="stylesheet" href="./public/stylesheets/main.min.css" media="screen" title="no title" charset="utf-8">
+  <%= stylesheet_link_tag 'main', media: 'all', 'data-turbolinks-track' => true %>
   <%= csrf_meta_tags %>
 </head>
 <body>
   <main  id="pjax_container" class="page">
     <%= yield %>
   </main>
-  <script type="text/javascript" src="./public/js/main.min.js"></script>
+  <%= javascript_include_tag 'main', 'data-turbolinks-track' => true %>
   <footer class="footer"></footer>
 </body>
 </html>
