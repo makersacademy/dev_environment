@@ -36,5 +36,15 @@ module DevEnvironment
     #enable asset pipeline for heroku
     #config.serve_static_files = true
     config.assets.enable = false
+    config.assets.paths << Rails.root.join("public", "assets", "stylesheets")
+    config.assets.paths << Rails.root.join("public", "assets", "js")
+    config.assets.paths << Rails.root.join("public", "assets", "images")
+    
+    # # Whether or not compilation should take place
+    # GulpRails.options[:enabled]   = true
+    # # The command to run
+    # GulpRails.options[:command]   = 'gulp'
+    # # The directory in which your command should be executed
+    # GulpRails.options[:directory] = Rails.root.join('frontend')
   end
 end

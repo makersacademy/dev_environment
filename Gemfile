@@ -19,6 +19,7 @@ gem 'rails_12factor'
 gem 'puma'
 gem "rack-timeout"
 gem 'foreman'
+# gem 'gulp_rails'
 
 group :development, :test do
   gem 'byebug'
