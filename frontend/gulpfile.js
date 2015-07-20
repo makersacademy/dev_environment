@@ -15,12 +15,8 @@ var gulp = require('gulp'),
     jsmin  = require("gulp-jsmin");
 
 gulp.task('default', function() {
-    gulp.start('styles', 'scripts', 'images', 'watch');
+    gulp.start('styles', 'scripts','depcss', 'images', 'watch');
 });
-
-// gulp.task('clean', function(cb) {
-//     del(['../public/assets/stylesheets', '../public/assets/js', '../public/assets/images'], cb)
-// });
 
 gulp.task('images', function() {
   return gulp.src('assets/images/**/*')
@@ -38,6 +34,16 @@ gulp.task('styles', function() {
     .pipe(gulp.dest('../public/assets/stylesheets'))
 });
 
+gulp.task('depcss', function() {
+  return gulp.src('assets/dependencies/css/*.css', { style: 'expanded' })
+    .pipe(autoprefixer('last 2 version'))
+    .pipe(concat('dependencies.css'))
+    .pipe(minifycss())
+    .pipe(rename({suffix: '.min'}))
+    .pipe(gulp.dest('../public/assets/dependencies'))
+});
+
+
 gulp.task('scripts', function() {
   return gulp.src('assets/javascripts/*.js')
     .pipe(concat('main.js'))
@@ -46,7 +52,6 @@ gulp.task('scripts', function() {
     .pipe(rename({suffix: '.min'}))
     .pipe(gulp.dest('../public/assets/js'))
 });
-
 
 gulp.task('watch', function() {
 

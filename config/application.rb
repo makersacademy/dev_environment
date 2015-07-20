@@ -37,9 +37,10 @@ module DevEnvironment
     #config.serve_static_files = true
     config.assets.enable = false
     config.assets.paths << Rails.root.join("public", "assets", "stylesheets")
+    config.assets.paths << Rails.root.join("public", "assets", "dependencies")
     config.assets.paths << Rails.root.join("public", "assets", "js")
     config.assets.paths << Rails.root.join("public", "assets", "images")
-    
+
     # # Whether or not compilation should take place
     # GulpRails.options[:enabled]   = true
     # # The command to run
