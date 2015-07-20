@@ -2,14 +2,13 @@
 <html>
 <head>
   <title>Dev Environment Set Up</title>
-  <%= stylesheet_link_tag 'application', media: 'all', 'data-turbolinks-track' => true %>
+
   <%= csrf_meta_tags %>
 </head>
 <body>
   <main  id="pjax_container" class="page">
     <%= yield %>
   </main>
-  <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
   <footer class="footer"></footer>
 </body>
 </html>
