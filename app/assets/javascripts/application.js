@@ -31,16 +31,14 @@ new WOW().init();
     // }).on('pjax:end',   function() { $(this).fadeIn(duration) })
 
     $('a').bind('click',function(e) {
+
        e.preventDefault(); e.stopPropagation();
 
         $(this).parent().slideUp( 800 , function(){
-          console.log('before click');
           var url = $(this).find('a').attr('href');
-          alert(url)
+          $(this).unbind().click();
           window.location.replace(url)
         });
-
-        console.log('it worked');
 
     });
 
