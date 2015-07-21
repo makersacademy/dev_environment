@@ -3,7 +3,7 @@ Rails.application.routes.draw do
   root'home#index'
 
   #Pick up your OS page
-  get 'os', to: 'os#index', path: '/pick-up-your-os'
+  get 'os', to: 'os#index', path: '/pick-your-os'
 
   #Choose between essential || useful tools
   get 'essentialorusefulmac', to: 'mac#index', path: '/mac'

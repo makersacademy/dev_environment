@@ -7,8 +7,8 @@
   &__col {
     height: 100vh;
     text-align: center;
-    padding-top: 40vh;
-    
+    padding-top: 25vh;
+
     &--1 {
       background-color: $red;
     }
@@ -21,6 +21,12 @@
       background-color: $lightgreen;
     }
 
+  }
+
+  a {
+    color: $green;
+    text-decoration: none;
+    font-size: 2em;
   }
 
 }
