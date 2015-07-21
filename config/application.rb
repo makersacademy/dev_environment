@@ -35,5 +35,6 @@ module DevEnvironment
     #alex
     #enable asset pipeline for heroku
     config.serve_static_files = true
+    config.assets.paths << Rails.root.join("app", "assets", "fonts")
   end
 end

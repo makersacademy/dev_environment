@@ -3,6 +3,7 @@
 // You can use Sass (SCSS) here: http://sass-lang.com/
 //= depend_on_asset "home-bg-6.jpg"
 
+
 .home {
   background: url('<%= asset_path("home-bg-6.jpg") %>');
   background-size: cover;
@@ -19,7 +20,7 @@
     margin: 0 auto;
     top: 30vh;
     position: relative;
-    color: #E5E5E5;
+    color: $cream;
     text-align: center;
   }
 
@@ -30,7 +31,7 @@
   }
 
   a {
-    color: black;
+    color: $green;
     width: 122px;
     margin: 0 auto;
     position: relative;
@@ -40,7 +41,7 @@
     padding-right: 15px;
     padding-top: 15px;
     padding-bottom: 15px;
-    background-color: rgba(255, 255, 255, 0.87);
+    background-color: $cream;
     top: 40vh;
     text-decoration: none;
     transition: all 600ms ease-out;
@@ -51,8 +52,8 @@
 
   a:hover {
     transition: 0.6 all ease;
-    background-color: #3D3B3B;
-    color: white;
+    background-color: $green;
+    color: $cream;
     text-decoration: none !important;
   }
 
