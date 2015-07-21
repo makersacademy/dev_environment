@@ -19,6 +19,8 @@ gem 'rails_12factor'
 gem 'puma'
 gem "rack-timeout"
 gem 'foreman'
+gem 'paperclip'
+gem 'aws-sdk'
 
 group :development, :test do
   gem 'byebug'
