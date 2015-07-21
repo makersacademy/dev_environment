@@ -18,33 +18,24 @@
 //= require jquery.pjax
 //= require_tree .
 
+
+//Init wow
 new WOW().init();
 
-    $(document).pjax('a', '#pjax_container');
+//Load all links into the target pjax controller
+$(document).pjax('a', '#pjax_container');
 
-
-    // var duration = 400
-    // $('#pjax_container').pjax('a', { duration: duration })
-    // $('#pjax_container').on('pjax:start', function() { $(this).fadeOut(duration) }).on('pjax:waiting', function() {
-    //   $(this).show();
-    //   console.log("ca marche")
-    // }).on('pjax:end',   function() { $(this).fadeIn(duration) })
-
-    $('a').bind('click',function(e) {
-
-       e.preventDefault(); e.stopPropagation();
-
-        $(this).parent().slideUp( 800 , function(){
-          var url = $(this).find('a').attr('href');
-          $(this).unbind().click();
-          window.location.replace(url)
-        });
-
+//Animate the exit of the father element of link
+$('a').bind('click',function(e) {
+   e.preventDefault(); e.stopPropagation();
+    $(this).parent().slideUp( 600 , function(){
+      var url = $(this).find('a').attr('href');
+      $(this).unbind().click();
+      window.location.replace(url)
     });
+});
 
-
-
-
+//Allow to have the hover animation on the 5 columns grid AFTER A PJAX LOAD
 $(document).on("pjax:success", function(e) {
   new WOW().init();
   $('.essentialtools__col').hover(
@@ -57,6 +48,7 @@ $(document).on("pjax:success", function(e) {
    });
 });
 
+//Allow to have the hover animation on the 5 columns grid
 $('.essentialtools__col').hover(
   function() {
     $(this).removeClass('essentialtools__col--other').addClass('essentialtools__col--hover');
