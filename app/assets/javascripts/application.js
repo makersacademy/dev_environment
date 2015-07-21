@@ -30,22 +30,19 @@ new WOW().init();
     //   console.log("ca marche")
     // }).on('pjax:end',   function() { $(this).fadeIn(duration) })
 
-        // $('a').bind('click',function(e) {
-        //    //debugger;
-        //    e.preventDefault(); e.stopPropagation();
-        //
-        //     $(this).parent().slideUp( 800 , function(){
-        //       console.log('before click');
-        //       var url = $(this).children().attr('href');
-        //       //:debugger;
-        //       window.location.replace(url)
-        //       //$(document).pjax($(this).children(), '#pjax_container');
-        //       //$(document).pjax({url: url, container: '#pjax-container'})
-        //     });
-        //
-        //     console.log('it worked');
-        //
-        // });
+    $('a').bind('click',function(e) {
+       e.preventDefault(); e.stopPropagation();
+
+        $(this).parent().slideUp( 800 , function(){
+          console.log('before click');
+          var url = $(this).find('a').attr('href');
+          alert(url)
+          window.location.replace(url)
+        });
+
+        console.log('it worked');
+
+    });
 
 
 
