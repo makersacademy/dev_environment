@@ -30,7 +30,6 @@ new WOW().init();
     //   console.log("ca marche")
     // }).on('pjax:end',   function() { $(this).fadeIn(duration) })
 
-
         $('a').bind('click',function(e) {
            //debugger;
            e.preventDefault(); e.stopPropagation();
