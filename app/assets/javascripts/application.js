@@ -32,17 +32,20 @@ new WOW().init();
 
 
         $('a').bind('click',function(e) {
+           //debugger;
+           e.preventDefault(); e.stopPropagation();
 
-           e.stopPropagation();
-
-            $(this).parent().slideUp( 800 , 'ease', function(){
+            $(this).parent().slideUp( 800 , function(){
               console.log('before click');
-                $(this).unbind('click').click();
-              console.log('after click');
+              var url = $(this).children().attr('href');
+              //:debugger;
+              window.location.replace(url)
+              //$(document).pjax($(this).children(), '#pjax_container');
+              //$(document).pjax({url: url, container: '#pjax-container'})
             });
 
             console.log('it worked');
-            
+
         });
 
 
