@@ -16,6 +16,7 @@
 //= require turbolinks
 //= require wow
 //= require jquery.pjax
+//= require fittext
 //= require_tree .
 
 
@@ -53,7 +54,18 @@ $(document).on("pjax:success", function(e) {
       $(this).removeClass('essentialtools__col--other, essentialtools__col--hover');
       $('.essentialtools__col').not($(this)).removeClass('essentialtools__col--other');
    });
+
+  jQuery('.carousel').on('slid.bs.carousel', function () {
+    $('h2').fitText(2, { minFontSize: '22px', maxFontSize: '80px' });
+    $('p').fitText(2, { minFontSize: '10px', maxFontSize: '28px' });
+    $('p.step__next').fitText(0.8, { minFontSize: '10px', maxFontSize: '28px' });
+  });
+
 });
+
+$('h2').fitText(2, { minFontSize: '22px', maxFontSize: '80px' });
+$('p').fitText(2, { minFontSize: '10px', maxFontSize: '28px' });
+$('p.step__next').fitText(0.8, { minFontSize: '10px', maxFontSize: '28px' });
 
 //Allow to have the hover animation on the 5 columns grid
 $('.essentialtools__col').hover(

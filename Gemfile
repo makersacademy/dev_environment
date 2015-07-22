@@ -19,8 +19,7 @@ gem 'rails_12factor'
 gem 'puma'
 gem "rack-timeout"
 gem 'foreman'
-gem 'paperclip'
-gem 'aws-sdk'
+gem 'fittextjs_rails'
 
 group :development, :test do
   gem 'byebug'
