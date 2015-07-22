@@ -20,14 +20,26 @@
   max-width: 80%;
   margin: 12vh auto 0 auto;
 
-  p, h2, code {
+  p, h2 {
     margin-bottom: 40px;
     display: block;
   }
 
-  code {
-    width: 50%;
-    margin: 0 auto;
+  &__boxes {
+    padding: 10px;
+    margin-bottom: 20px;
+    margin-top: 20px;
+    display: inline-block;
+
+    &--code {
+      background-color: rgb(244, 239, 239);
+      color: #E4745F;
+    }
+
+    &--instructions {
+      background-color: #E4745F;
+      color: $cream;
+    }
   }
 
   &__next, &__next a {

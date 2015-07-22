@@ -36,8 +36,9 @@
           <h2>First step: Install the Command Line Tools via the terminal</h2>
           <p>
             Open your terminal and write this line:
+            <br>
+          <span class="step__boxes step__boxes--code">xcode-select --install</span>
           </p>
-          <code>xcode-select --install</code>
           <p class="step__next" href="#carousel-example-generic" role="button" data-slide="next">
             Take the next step <i class="fa fa-angle-double-right"></i>
           </p>
@@ -103,10 +104,9 @@
             <br>
             And take the next step
           </p>
-          <code>xcode-select --install</code>
-          <a class="step__next" href="#carousel-example-generic">
+          <%= link_to homebrewmac_path , :class => 'step__next' do %>
             Take the next step <i class="fa fa-angle-double-right"></i>
-          </a>
+          <% end %>
         </article>
       </div>
       <div class="wow slideInRight col-lg-6 col-md-6 col-sm-12 col-xs-12">
