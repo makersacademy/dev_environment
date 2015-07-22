@@ -85,26 +85,3 @@
     margin-left: 20px;
   }
 }
-
-/* Carousel sample page for technologies */
-.carousel {
-  height: 100vh;
-  position: relative;
-
-  &__1 {
-    background-color: $cream;
-  }
-
-  &-control.left, .carousel-control.right  {
-    background-image: none!important;
-    background-repeat: repeat-x;
-  }
-
-}
-
-.step {
-  margin-top: 10vh;
-  padding-left: 13vw;
-  float: left;
-  width: 40vw;
-}
