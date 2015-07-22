@@ -26,14 +26,21 @@ new WOW().init();
 $(document).pjax('a', '#pjax_container');
 
 //Animate the exit of the father element of link
-$('a').bind('click',function(e) {
-   e.preventDefault(); e.stopPropagation();
-    $(this).parent().slideUp( 600 , function(){
-      var url = $(this).find('a').attr('href');
-      $(this).unbind().click();
-      window.location.replace(url)
-    });
-});
+// $('a').bind('click',function(e) {
+//    e.preventDefault(); e.stopPropagation();
+//
+//     $(this).parent().slideUp( 600 , function(){
+//       var url = $(this).find('a').attr('href');
+//       $(this).unbind().click();
+//       window.location.replace(url)
+//     });
+//
+//     $(this).sibling.slideDown( 600 , function(){
+//       var url = $(this).find('a').attr('href');
+//       $(this).unbind().click();
+//       window.location.replace(url)
+//     });
+// });
 
 //Allow to have the hover animation on the 5 columns grid AFTER A PJAX LOAD
 $(document).on("pjax:success", function(e) {

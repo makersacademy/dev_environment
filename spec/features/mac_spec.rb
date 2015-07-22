@@ -57,16 +57,3 @@ feature 'Esential tool page' do
   end
 
 end
-
-feature 'Essential Tools JS testes' do
-
-  xscenario 'When I hover a column, it add the hover class', js: :true do
-    visit '/essential-tools'
-    #save_and_open_page
-    find ('.home__col--1').hover
-    find ('.home__col--hover')
-    expect(page).to have_css('.home__col--hover')
-    expect(page).to have_css('.home__col--other')
-  end
-
-end
