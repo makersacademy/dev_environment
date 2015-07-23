@@ -23,11 +23,19 @@ Rails.application.routes.draw do
 
   #Technologies pages
   #Mac
+  #EssentialTools
   get 'xcodemac', to: 'mac#xcode', path: '/mac/essential-tools/install/xcode'
   get 'rubyandrvmmac', to: 'mac#ruby_and_rvm', path: '/mac/essential-tools/install/ruby-and-rvm'
   get 'prymac', to: 'mac#pry', path: '/mac/essential-tools/install/pry'
   get 'herokumac', to: 'mac#heroku', path: '/mac/essential-tools/install/heroku'
   get 'homebrewmac', to: 'mac#homebrew', path: '/mac/essential-tools/install/homebrew'
+  #UsefulTools
+  get 'itermmac', to: 'mac#iterm', path: '/mac/useful-tools/install/iterm'
+  get 'atommac', to: 'mac#atom', path: '/mac/useful-tools/install/atom'
+  get 'vimmac', to: 'mac#vim', path: '/mac/useful-tools/install/vim'
+  get 'googlechromemac', to: 'mac#googlechrome', path: '/mac/useful-tools/install/google-chrome'
+  get 'gitbookmac', to: 'mac#gitbook', path: '/mac/useful-tools/install/git-book'
+
   #Windows
   get 'xcodewindows', to: 'windows#xcode', path: '/windows/essential-tools/install/xcode'
   get 'rubyandrvmwindows', to: 'windows#ruby_and_rvm', path: '/windows/essential-tools/install/ruby-and-rvm'
