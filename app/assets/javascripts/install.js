@@ -14,3 +14,13 @@ if (bgColor != null) {
 }
 
 $('.carousel-control.right').css('background-image', 'none');
+$('.carousel-control').css('width', '3%');
+
+$('.glyphicon-chevron-left').css({
+  'left':'80%',
+  'color': '#EF504F'
+});
+$('.glyphicon-chevron-right').css({
+  'right':'80%',
+  'color': '#EF504F'
+});
