@@ -56,16 +56,16 @@ $(document).on("pjax:success", function(e) {
    });
 
   jQuery('.carousel').on('slid.bs.carousel', function () {
-    $('h2').fitText(2, { minFontSize: '22px', maxFontSize: '80px' });
-    $('p').fitText(2, { minFontSize: '10px', maxFontSize: '28px' });
-    $('p.step__next').fitText(0.8, { minFontSize: '10px', maxFontSize: '28px' });
+    $('h2').fitText(1.2, { minFontSize: '32px', maxFontSize: '240px' });
+    $('p').fitText(1.2, { minFontSize: '14px', maxFontSize: '26px' });
+    $('p.step__next').fitText(1, { minFontSize: '12px', maxFontSize: '32px' });
   });
 
 });
 
-$('h2').fitText(2, { minFontSize: '22px', maxFontSize: '80px' });
-$('p').fitText(2, { minFontSize: '10px', maxFontSize: '28px' });
-$('p.step__next').fitText(0.8, { minFontSize: '10px', maxFontSize: '28px' });
+$('h2').fitText(1.2, { minFontSize: '32px', maxFontSize: '240px' });
+$('p').fitText(1.2, { minFontSize: '14px', maxFontSize: '26px' });
+$('p.step__next').fitText(1, { minFontSize: '12px', maxFontSize: '32px' });
 
 //Allow to have the hover animation on the 5 columns grid
 $('.essentialtools__col').hover(

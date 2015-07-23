@@ -1,7 +1,15 @@
   $('.carousel').carousel()
 
-  jQuery('.carousel').on('slid.bs.carousel', function () {
-      $('h2').fitText(2, { minFontSize: '22px', maxFontSize: '80px' });
-      $('p').fitText(2, { minFontSize: '10px', maxFontSize: '28px' });
-      $('p.step__next').fitText(0.8, { minFontSize: '10px', maxFontSize: '28px' });
-   });
+jQuery('.carousel').on('slid.bs.carousel', function () {
+  $('h2').fitText(1.2, { minFontSize: '32px', maxFontSize: '240px' });
+  $('p').fitText(1.2, { minFontSize: '14px', maxFontSize: '26px' });
+  $('p.step__next').fitText(1, { minFontSize: '12px', maxFontSize: '32px' });
+});
+
+var bgColor = $(".carousel__1").css('background-color');
+
+if (bgColor != null) {
+  $('body').css('background-color', 'bgColor')
+}
+
+$('.carousel-control.right').css('background-image', 'none');
