@@ -1,4 +1,4 @@
-  $('.carousel').carousel()
+$('.carousel').carousel()
 
 jQuery('.carousel').on('slid.bs.carousel', function () {
   $('h2').fitText(1.2, { minFontSize: '32px', maxFontSize: '240px' });
