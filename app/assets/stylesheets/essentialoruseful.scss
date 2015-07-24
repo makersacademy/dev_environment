@@ -14,16 +14,16 @@
       top: 50%;
       position: relative;
       font-size: 36px;
-      color: $cream;
+      color: $whitetext;
     }
 
 
     &--essential {
-      background: $red;
+      background: #00CAFF;
     }
 
     &--useful {
-      background: $lightgreen;
+      background: #F2B635;
     }
   }
 

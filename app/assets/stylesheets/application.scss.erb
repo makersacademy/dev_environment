@@ -12,16 +12,29 @@
  *
  */
 
- $cream : #FEF2D8;
- $red : #EF504F;
- $lightgreen : #84CDC2;
- $green : #036F73;
- $lightred: #F18C79;
- $xcode:    #F5F0E9;
- $homebrew: rgba(214, 174, 118, 0.75);
- $ruby:     rgba(155, 17, 30, 0.75);
- $pry:      rgba(248, 125, 73, 0.85);
- $heroku:   rgba(76, 73, 115, 0.85);
+ $yellow: #ECBF08;
+ $green: #23DC71;
+ $orange: #F19A2A;
+ $red: #E73D51;
+ $purple: #6B29BA;
+ $blue: #00A0E6;
+ $lightblue: #00CAFF;
+ $whitetext: white;
+ $homecream: #FEF2D8;
+
+ 
+ // $cream :#F2B635; //#FEF2D8
+ // $homecream : #FEF2D8;
+ // $red : #E73D51; //#EF504F
+ // $lightgreen : #23DC71; //#84CDC2
+ // $green : white; //#036F73;
+ // $lightred: #F25648; //#F18C79
+ // $xcode:   #F5A637;// #F5F0E9;
+ // $homebrew: #F2B635; // rgba(214, 174, 118, 0.75);
+ // $ruby:     #E73D51; // rgba(155, 17, 30, 0.75);
+ // $pry:      #23DC71; // rgba(248, 125, 73, 0.85);
+ // $heroku:   #6B29BA; // rgba(76, 73, 115, 0.85);
+ // $whitetext: white;
 
  @import "bootstrap-sprockets";
  @import "bootstrap";
@@ -41,15 +54,16 @@
   height: 40px;
   position: absolute;
   z-index: 99;
-  background-color: rgba(254, 242, 216, 0.7);
+  background-color: rgba(254, 242, 216, 0.4);
   margin-top: 0px;
   margin-bottom: 0px;
   padding-top: 10px;
-  color: $red;
+  color: $whitetext;
+  text-shadow: 1px 1px 1px #6B6464;
 
   .fa {
     font-size: 17px;
-    color: $red;
+    color: $whitetext;
   }
 
   .fa-home {
