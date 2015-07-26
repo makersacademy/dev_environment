@@ -30,18 +30,20 @@
   <div class="carousel-inner" role="listbox">
 
 
-    <div class="row item active">
+    <div class="row item active bg-red">
       <div class="wow slideInLeft col-lg-6 col-md-6 col-sm-12 col-xs-12">
         <article class="step">
-          <h2>First step: Install Ruby Version Manager (RVM)</h2>
+          <h2>Introduction: Ahhh ... VIM </h2>
           <p>
-            Open your terminal and write this line:
-          <span class="step__boxes step__boxes--code">\curl -L https://get.rvm.io | bash -s stable</span>
+            It stands for VI Improved, and it is.
             <br>
-            Basically RVM helps you to manage the different versions of ruby
+            If I explain you here how to work with it, you'll never be a good developer,
             <br>
+            You just need to know that it is a text editor
             <br>
-            Now, close your terminal
+            And that you already have it
+            <br>
+            <span class="step__boxes step__boxes--code">vim</span>
           </p>
           <p class="step__next" href="#carousel-example-generic" role="button" data-slide="next">
             Take the next step <i class="fa fa-angle-double-right"></i>
@@ -50,64 +52,31 @@
       </div>
       <div class="wow slideInRight col-lg-6 col-md-6 col-sm-12 col-xs-12">
         <article class="step">
-          Screenshot
+          <%= image_tag 'vim-step1.jpg', :class => 'step__image' %>
         </article>
       </div>
     </div>
 
 
-    <div class="row item">
+    <div class="row item bg-yellow">
       <div class="wow slideInLeft col-lg-6 col-md-6 col-sm-12 col-xs-12">
         <article class="step">
-          <h2>Second step: Check if everything goes well !</h2>
+          <h2>Second step: Understanding a bit what's goin on</h2>
           <p>
-            Open your terminal again and type
+            Now, just type
             <br>
-            <span class="step__boxes step__boxes--code">type rvm | head -n 1</span>
+            <span class="step__boxes step__boxes--code">:help</span>
             <br>
-            You should see a message saying
-            <br>
-            <span class="step__boxes step__boxes--instructions">rvm is a function</span>
+            Follow the tutorial and learn.
           </p>
-          <p class="step__next" href="#carousel-example-generic" role="button" data-slide="next">
-            Take the next step <i class="fa fa-angle-double-right"></i>
-          </p>
-        </article>
-      </div>
-      <div class="wow slideInRight col-lg-6 col-md-6 col-sm-12 col-xs-12">
-        <article class="step">
-          2
-        </article>
-      </div>
-    </div>
-    <div class="row item">
-
-
-      <div class="wow slideInLeft col-lg-6 col-md-6 col-sm-12 col-xs-12">
-        <article class="step">
-          <h2>Third step: Finally ! We will install Ruby !!!</h2>
-          <p>
-            You will now install Ruby, one of the most beautiful language of world
-            <br>
-            For this, just type:
-            <span class="step__boxes step__boxes--code">rvm use ruby --install --default</span>
-            <br>
-            It might ask you for your password, type it, but you'll not see it remember from hombrew tutorial
-            <br>
-            Once is good, type:
-            <span class="step__boxes step__boxes--code">ruby -v</span>
-            <br>
-            If you get:
-            <span class="step__boxes step__boxes--instructions">ruby 2.2.1 or +</span>
-          </p>
-          <%= link_to prymac_path , :class => 'step__next' do %>
-            Install PRY <i class="fa fa-angle-double-right"></i>
+          <%= link_to googlechromemac_path , :class => 'step__next' do %>
+            Install Chrome <i class="fa fa-angle-double-right"></i>
           <% end %>
         </article>
       </div>
       <div class="wow slideInRight col-lg-6 col-md-6 col-sm-12 col-xs-12">
         <article class="step">
-          2
+          <%= image_tag 'vim-step2.jpg', :class => 'step__image' %>
         </article>
       </div>
     </div>

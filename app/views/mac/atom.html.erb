@@ -30,18 +30,20 @@
   <div class="carousel-inner" role="listbox">
 
 
-    <div class="row item active">
+    <div class="row item active bg-green">
       <div class="wow slideInLeft col-lg-6 col-md-6 col-sm-12 col-xs-12">
         <article class="step">
-          <h2>First step: Install Ruby Version Manager (RVM)</h2>
+          <h2>Introduction: What's Atom ?</h2>
           <p>
-            Open your terminal and write this line:
-          <span class="step__boxes step__boxes--code">\curl -L https://get.rvm.io | bash -s stable</span>
-            <br>
-            Basically RVM helps you to manage the different versions of ruby
-            <br>
-            <br>
-            Now, close your terminal
+            Atom is a text editor that simplify your life.
+          <br>
+            Basicaly it is like <a href="https://www.sublimetext.com/3">sublime text</a> but it comes with more packages
+          <br>
+            And it is easier to use
+          <br>
+            The big + ... It has been made by GitHub
+          <br>
+            It mades the interaction optimale!
           </p>
           <p class="step__next" href="#carousel-example-generic" role="button" data-slide="next">
             Take the next step <i class="fa fa-angle-double-right"></i>
@@ -50,24 +52,22 @@
       </div>
       <div class="wow slideInRight col-lg-6 col-md-6 col-sm-12 col-xs-12">
         <article class="step">
-          Screenshot
+          <%= image_tag 'atomlogo.png', :class => 'step__image' %>
         </article>
       </div>
     </div>
 
-
-    <div class="row item">
+    <div class="row item bg-orange">
       <div class="wow slideInLeft col-lg-6 col-md-6 col-sm-12 col-xs-12">
         <article class="step">
-          <h2>Second step: Check if everything goes well !</h2>
+          <h2>Second step: Install the DMG !</h2>
           <p>
-            Open your terminal again and type
-            <br>
-            <span class="step__boxes step__boxes--code">type rvm | head -n 1</span>
-            <br>
-            You should see a message saying
-            <br>
-            <span class="step__boxes step__boxes--instructions">rvm is a function</span>
+            Got to this URL
+          <br>
+            <span class="step__boxes step__boxes--instructions"><a href="https://atom.io/">Atom.io</a></span>
+          <br>
+              And click on the download button
+          <br>
           </p>
           <p class="step__next" href="#carousel-example-generic" role="button" data-slide="next">
             Take the next step <i class="fa fa-angle-double-right"></i>
@@ -76,38 +76,46 @@
       </div>
       <div class="wow slideInRight col-lg-6 col-md-6 col-sm-12 col-xs-12">
         <article class="step">
-          2
+          <%= image_tag 'atom-step1.jpg', :class => 'step__image' %>
         </article>
       </div>
     </div>
-    <div class="row item">
 
-
+    <div class="row item bg-blue">
       <div class="wow slideInLeft col-lg-6 col-md-6 col-sm-12 col-xs-12">
         <article class="step">
-          <h2>Third step: Finally ! We will install Ruby !!!</h2>
+          <h2>Third step: Open the package</h2>
           <p>
-            You will now install Ruby, one of the most beautiful language of world
-            <br>
-            For this, just type:
-            <span class="step__boxes step__boxes--code">rvm use ruby --install --default</span>
-            <br>
-            It might ask you for your password, type it, but you'll not see it remember from hombrew tutorial
-            <br>
-            Once is good, type:
-            <span class="step__boxes step__boxes--code">ruby -v</span>
-            <br>
-            If you get:
-            <span class="step__boxes step__boxes--instructions">ruby 2.2.1 or +</span>
+            Click on
+            <span class="step__boxes step__boxes--instructions">Open When Done</span>
           </p>
-          <%= link_to prymac_path , :class => 'step__next' do %>
-            Install PRY <i class="fa fa-angle-double-right"></i>
+          <p class="step__next" href="#carousel-example-generic" role="button" data-slide="next">
+            Take the next step <i class="fa fa-angle-double-right"></i>
+          </p>
+        </article>
+      </div>
+      <div class="wow slideInRight col-lg-6 col-md-6 col-sm-12 col-xs-12">
+        <article class="step">
+          <%= image_tag 'atom-step2.jpg', :class => 'step__image' %>
+        </article>
+      </div>
+    </div>
+
+    <div class="row item bg-red">
+      <div class="wow slideInLeft col-lg-6 col-md-6 col-sm-12 col-xs-12">
+        <article class="step">
+          <h2>Fourth step: Drag it!</h2>
+          <p>
+            Put the application in your Application folder
+          </p>
+          <%= link_to vimmac_path , :class => 'step__next' do %>
+            Install VIM <i class="fa fa-angle-double-right"></i>
           <% end %>
         </article>
       </div>
       <div class="wow slideInRight col-lg-6 col-md-6 col-sm-12 col-xs-12">
         <article class="step">
-          2
+          <%= image_tag 'atom-step3.jpg', :class => 'step__image' %>
         </article>
       </div>
     </div>

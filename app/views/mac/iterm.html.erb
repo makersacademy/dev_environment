@@ -3,7 +3,7 @@
     <i class="fa fa-home"></i>
   <% end %>
   <h1 class="header__h1">
-    Iterm Set Up
+    Iterm2 Set Up
   </h1>
   <span class="header__socials">
     <span class="header__share">
@@ -30,18 +30,18 @@
   <div class="carousel-inner" role="listbox">
 
 
-    <div class="row item active">
+    <div class="row item active bg-purple">
       <div class="wow slideInLeft col-lg-6 col-md-6 col-sm-12 col-xs-12">
         <article class="step">
-          <h2>First step: Install Ruby Version Manager (RVM)</h2>
+          <h2>First step: What's the toolbelt?</h2>
           <p>
-            Open your terminal and write this line:
-          <span class="step__boxes step__boxes--code">\curl -L https://get.rvm.io | bash -s stable</span>
+            Iterm is a replacement for terminal.
             <br>
-            Basically RVM helps you to manage the different versions of ruby
+            It comes directly with a bunch of feature and it is really hackable.
             <br>
-            <br>
-            Now, close your terminal
+            <span class="step__boxes step__boxes--instructions">
+              <a href="https://www.iterm2.com/downloads.html">DL the last version</a>
+            </span>
           </p>
           <p class="step__next" href="#carousel-example-generic" role="button" data-slide="next">
             Take the next step <i class="fa fa-angle-double-right"></i>
@@ -50,24 +50,21 @@
       </div>
       <div class="wow slideInRight col-lg-6 col-md-6 col-sm-12 col-xs-12">
         <article class="step">
-          Screenshot
+          <%= image_tag 'iterm-step1.jpg', :class => 'step__image' %>
         </article>
       </div>
     </div>
 
-
-    <div class="row item">
+    <div class="row item bg-green">
       <div class="wow slideInLeft col-lg-6 col-md-6 col-sm-12 col-xs-12">
         <article class="step">
-          <h2>Second step: Check if everything goes well !</h2>
+          <h2>Second step: Open the package</h2>
           <p>
-            Open your terminal again and type
+            Click on
             <br>
-            <span class="step__boxes step__boxes--code">type rvm | head -n 1</span>
-            <br>
-            You should see a message saying
-            <br>
-            <span class="step__boxes step__boxes--instructions">rvm is a function</span>
+          <span class="step__boxes step__boxes--instructions">
+            "Open"
+          </span>
           </p>
           <p class="step__next" href="#carousel-example-generic" role="button" data-slide="next">
             Take the next step <i class="fa fa-angle-double-right"></i>
@@ -76,44 +73,29 @@
       </div>
       <div class="wow slideInRight col-lg-6 col-md-6 col-sm-12 col-xs-12">
         <article class="step">
-          2
+          <%= image_tag 'iterm-step2.jpg', :class => 'step__image' %>
         </article>
       </div>
     </div>
-    <div class="row item">
 
-
+    <div class="row item bg-blue">
       <div class="wow slideInLeft col-lg-6 col-md-6 col-sm-12 col-xs-12">
         <article class="step">
-          <h2>Third step: Finally ! We will install Ruby !!!</h2>
+          <h2>Third step: Drag it !</h2>
           <p>
-            You will now install Ruby, one of the most beautiful language of world
-            <br>
-            For this, just type:
-            <span class="step__boxes step__boxes--code">rvm use ruby --install --default</span>
-            <br>
-            It might ask you for your password, type it, but you'll not see it remember from hombrew tutorial
-            <br>
-            Once is good, type:
-            <span class="step__boxes step__boxes--code">ruby -v</span>
-            <br>
-            If you get:
-            <span class="step__boxes step__boxes--instructions">ruby 2.2.1 or +</span>
+            Drag and drop it to the app folder
           </p>
-          <%= link_to prymac_path , :class => 'step__next' do %>
-            Install PRY <i class="fa fa-angle-double-right"></i>
+          <%= link_to atommac_path , :class => 'step__next' do %>
+            Install Atom <i class="fa fa-angle-double-right"></i>
           <% end %>
         </article>
       </div>
       <div class="wow slideInRight col-lg-6 col-md-6 col-sm-12 col-xs-12">
         <article class="step">
-          2
+          <%= image_tag 'iterm-step3.jpg', :class => 'step__image' %>
         </article>
       </div>
     </div>
-
-    </div>
-
 
   </div>
 
