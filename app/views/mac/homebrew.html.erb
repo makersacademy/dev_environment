@@ -45,12 +45,12 @@
       </div>
       <div class="wow slideInRight col-lg-6 col-md-6 col-sm-12 col-xs-12">
         <article class="step">
-          Screenshot
+          <%= image_tag 'homebrew-step1.jpg', :class => 'step__image' %>
         </article>
       </div>
     </div>
 
-
+<span class=></span>
     <div class="row item bg-green">
       <div class="wow slideInLeft col-lg-6 col-md-6 col-sm-12 col-xs-12">
         <article class="step">
@@ -70,7 +70,7 @@
       </div>
       <div class="wow slideInRight col-lg-6 col-md-6 col-sm-12 col-xs-12">
         <article class="step">
-          2
+          <%= image_tag 'homebrew-step2.jpg', :class => 'step__image' %>
         </article>
       </div>
     </div>
@@ -85,12 +85,6 @@
             <br>
             <br>
             Be careful about what you type in ;)
-            <br>
-            <br>
-            Once is good, it should return to the prompt and the last line should be:
-            <br>
-            <br>
-            <span class="step__boxes step__boxes--instructions">"Run `brew help` to get started"</span>
           </p>
           <p class="step__next" href="#carousel-example-generic" role="button" data-slide="next">
             Take the next step <i class="fa fa-angle-double-right"></i>
@@ -99,7 +93,7 @@
       </div>
       <div class="wow slideInRight col-lg-6 col-md-6 col-sm-12 col-xs-12">
         <article class="step">
-          2
+          <%= image_tag 'homebrew-step3.jpg', :class => 'step__image' %>
         </article>
       </div>
     </div>
@@ -110,23 +104,23 @@
         <article class="step">
           <h2>Fourth step: Let's discover a bit brew ...</h2>
           <p>
+            Once is good, it should return to the prompt and the last line should be:
+            <br>
+            <span class="step__boxes step__boxes--instructions">"Run `brew help` to get started"</span>
+            <br>
             The first think we want is checking if our brew is feeling well:
             <br>
               <span class="step__boxes step__boxes--code">brew doctor</span>
             <br>
-              You should normally have something like the second picture:
-            <br>
-            <br>
-              <span class="step__boxes step__boxes--instructions">"Already up-to-date."</span>
           </p>
           <p class="step__next" href="#carousel-example-generic" role="button" data-slide="next">
-            Take the next step <i class="fa fa-angle-double-right"></i>
+            Check out the next picture <i class="fa fa-angle-double-right"></i>
           </p>
         </article>
       </div>
       <div class="wow slideInRight col-lg-6 col-md-6 col-sm-12 col-xs-12">
         <article class="step">
-          2
+          <%= image_tag 'homebrew-step4.jpg', :class => 'step__image' %>
         </article>
       </div>
     </div>
@@ -134,16 +128,44 @@
     <div class="row item bg-blue">
       <div class="wow slideInLeft col-lg-6 col-md-6 col-sm-12 col-xs-12">
         <article class="step">
-          <h2>Fifth step: for the next time, what you should know ...</h2>
+          <h2>Fifth step: WTF ?</h2>
           <p>
-            The first think we want is having the last version of brew, to do that, simply run:
             <br>
-            <span class="step__boxes step__boxes--code">brew update</span>
-            <br>
-            You should normally have this message:
+              Basically, it checks all the files related to brew and there symlinks.
             <br>
             <br>
-            <span class="step__boxes step__boxes--instructions">"Already up-to-date."</span>
+              It will tells you if there is some error and a little help on how to fix input.
+            <br>
+            <br>
+              So, If you have a problem with your computer just checkout it out,
+            <br>
+            <br>
+              The doctor is always TRUE.
+          </p>
+          <p class="step__next" href="#carousel-example-generic" role="button" data-slide="next">
+            Check out the next picture <i class="fa fa-angle-double-right"></i>
+          </p>
+        </article>
+      </div>
+      <div class="wow slideInRight col-lg-6 col-md-6 col-sm-12 col-xs-12">
+        <article class="step">
+          <%= image_tag 'homebrew-step5.jpg', :class => 'step__image' %>
+        </article>
+      </div>
+    </div>
+
+    <div class="row item bg-blue">
+      <div class="wow slideInLeft col-lg-6 col-md-6 col-sm-12 col-xs-12">
+        <article class="step">
+          <h2>Sixth step: Always get the last version</h2>
+          <p>
+            <br>
+              In order to get the last version
+            <br>
+              You need to run the update command
+            <br>
+              <span class="step__boxes step__boxes--code">brew update</span>
+            <br>
           </p>
           <%= link_to rubyandrvmmac_path , :class => 'step__next' do %>
             Install RVM &amp; Ruby <i class="fa fa-angle-double-right"></i>
@@ -152,7 +174,7 @@
       </div>
       <div class="wow slideInRight col-lg-6 col-md-6 col-sm-12 col-xs-12">
         <article class="step">
-          2
+          <%= image_tag 'homebrew-step6.jpg', :class => 'step__image' %>
         </article>
       </div>
     </div>

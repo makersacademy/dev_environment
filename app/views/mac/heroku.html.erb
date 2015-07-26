@@ -48,7 +48,7 @@
       </div>
       <div class="wow slideInRight col-lg-6 col-md-6 col-sm-12 col-xs-12">
         <article class="step">
-          Screenshot
+          <%= image_tag 'heroku-step1.jpg', :class => 'step__image' %>
         </article>
       </div>
     </div>
@@ -64,7 +64,7 @@
             <a href="https://toolbelt.heroku.com/osx">https://toolbelt.heroku.com/osx</a>
           </span>
           <br>
-            Open the package
+            Download the package
           </p>
           <p class="step__next" href="#carousel-example-generic" role="button" data-slide="next">
             Take the next step <i class="fa fa-angle-double-right"></i>
@@ -73,10 +73,98 @@
       </div>
       <div class="wow slideInRight col-lg-6 col-md-6 col-sm-12 col-xs-12">
         <article class="step">
-          Screenshot
+          <%= image_tag 'heroku-step2.jpg', :class => 'step__image' %>
         </article>
       </div>
     </div>
+
+    <div class="row item bg-blue">
+      <div class="wow slideInLeft col-lg-6 col-md-6 col-sm-12 col-xs-12">
+        <article class="step">
+          <h2>Second step: Open the package</h2>
+          <p>
+            Click on
+            <span class="step__boxes step__boxes--instructions">
+              Open
+            </span>
+          </p>
+          <p class="step__next" href="#carousel-example-generic" role="button" data-slide="next">
+            Take the next step <i class="fa fa-angle-double-right"></i>
+          </p>
+        </article>
+      </div>
+      <div class="wow slideInRight col-lg-6 col-md-6 col-sm-12 col-xs-12">
+        <article class="step">
+          <%= image_tag 'heroku-step3.jpg', :class => 'step__image' %>
+        </article>
+      </div>
+    </div>
+
+    <div class="row item bg-orange">
+      <div class="wow slideInLeft col-lg-6 col-md-6 col-sm-12 col-xs-12">
+        <article class="step">
+          <h2>Third step: Continue the install</h2>
+          <p>
+            Click on
+            <span class="step__boxes step__boxes--instructions">
+              Continue
+            </span>
+          </p>
+          <p class="step__next" href="#carousel-example-generic" role="button" data-slide="next">
+            Take the next step <i class="fa fa-angle-double-right"></i>
+          </p>
+        </article>
+      </div>
+      <div class="wow slideInRight col-lg-6 col-md-6 col-sm-12 col-xs-12">
+        <article class="step">
+          <%= image_tag 'heroku-step3.jpg', :class => 'step__image' %>
+        </article>
+      </div>
+    </div>
+
+    <div class="row item bg-yellow">
+      <div class="wow slideInLeft col-lg-6 col-md-6 col-sm-12 col-xs-12">
+        <article class="step">
+          <h2>Fourth step: Put your password and launch the installation</h2>
+          <p>
+            Fill the input with your password
+            <br>
+            And click on
+            <span class="step__boxes step__boxes--instructions">
+              Install Software
+            </span>
+          </p>
+          <p class="step__next" href="#carousel-example-generic" role="button" data-slide="next">
+            Take the next step <i class="fa fa-angle-double-right"></i>
+          </p>
+        </article>
+      </div>
+      <div class="wow slideInRight col-lg-6 col-md-6 col-sm-12 col-xs-12">
+        <article class="step">
+          <%= image_tag 'heroku-step4.jpg', :class => 'step__image' %>
+        </article>
+      </div>
+    </div>
+
+    <div class="row item bg-purple">
+      <div class="wow slideInLeft col-lg-6 col-md-6 col-sm-12 col-xs-12">
+        <article class="step">
+          <h2>Fourth step: Put your password and launch the installation</h2>
+          <p>
+            That's it you are set up for Heroku, Foreman &amp; Git now !
+          </p>
+          <%= link_to usefulmac_path , :class => 'step__next' do %>
+            Checkout the useful tools <i class="fa fa-angle-double-right"></i>
+          <% end %>
+        </article>
+      </div>
+      <div class="wow slideInRight col-lg-6 col-md-6 col-sm-12 col-xs-12">
+        <article class="step">
+          <%= image_tag 'herokulogo.jpg', :class => 'step__image' %>
+        </article>
+      </div>
+    </div>
+
   </div>
 
   <!-- Controls -->
