@@ -19,28 +19,38 @@
 </header>
 <div class="row essentialtools">
     <div class="wow fadeInDown essentialtools__col essentialtools__col--1 col-lg-15 col-md-15 col-sm-12 col-xs-12">
-      <h3>Xcode</h3>
-      <%= image_tag 'Xcode-original.png', :class => 'logo__columns' %>
-      <%= link_to "Set up Xcode", xcodemac_path %>
+      <%= link_to xcodemac_path do %>
+        <h3>Xcode</h3>
+        <%= image_tag 'Xcode-original.png', :class => 'logo__columns' %>
+        <span>Set up Xcode</span>
+      <%  end  %>
     </div>
     <div class="wow fadeInDown essentialtools__col essentialtools__col--2 col-lg-15 col-md-15 col-sm-12 col-xs-12">
+      <%= link_to homebrewmac_path do %>
       <h3>Homebrew</h3>
       <%= image_tag 'Homebrew-Original.png', :class => 'logo__columns' %>
-      <%= link_to "Set up Homebrew", homebrewmac_path %>
+      <span>Set up Homebrew</span>
+      <%  end  %>
     </div>
     <div class="wow fadeInUp essentialtools__col essentialtools__col--3 col-lg-15 col-md-15 col-sm-12 col-xs-12">
+      <%= link_to rubyandrvmmac_path do %>
       <h3>RVM &amp; Ruby</h3>
       <%= image_tag 'Ruby-original.png', :class => 'logo__columns' %>
-      <%= link_to "Set up Ruby", rubyandrvmmac_path %>
+      <span>Set up Ruby</span>
+      <%  end  %>
     </div>
     <div class="wow fadeInDown essentialtools__col essentialtools__col--4 col-lg-15 col-md-15 col-sm-12 col-xs-12">
+      <%= link_to prymac_path do %>
       <h3>Pry</h3>
       <%= image_tag 'Pry-original.png', :class => 'logo__columns' %>
-      <%= link_to "Set up Pry", prymac_path %>
+      <span>Set up Pry</span>
+      <% end %>
     </div>
     <div class="wow fadeInDown essentialtools__col essentialtools__col--5 col-lg-15 col-md-15 col-sm-12 col-xs-12">
+      <%= link_to herokumac_path do %>
       <h3>Heroku</h3>
       <%= image_tag 'Heroku-white.png', :class => 'logo__columns' %>
-      <%= link_to "Set up Heroku", herokumac_path %>
+      <span>Set up Heroku</span>
+      <% end %>
     </div>
 </div>
