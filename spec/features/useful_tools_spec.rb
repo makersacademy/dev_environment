@@ -4,7 +4,7 @@ feature 'Useful tool page' do
     visit '/mac/useful-tools'
     click_link 'Iterm'
     expect(current_path).to eq ('/mac/useful-tools/install/iterm')
-    expect(page).to have_content 'Iterm Set Up'
+    expect(page).to have_content 'Iterm2 Set Up'
   end
 
   scenario 'A user can select Atom' do
