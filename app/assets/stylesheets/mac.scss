@@ -31,11 +31,11 @@
     }
 
     &--1 {
-      background-color: $orange;
+      background-color: $yellow;
     }
 
     &--2 {
-      background-color: $yellow;
+      background-color: $orange;
     }
 
     &--3 {
@@ -48,6 +48,10 @@
 
     &--5 {
       background-color: $purple;
+    }
+
+    &--6 {
+      background-color: $blue;
     }
   }
 }
