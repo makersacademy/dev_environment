@@ -27,6 +27,7 @@ require 'capybara/rspec'
 # If you are not using ActiveRecord, you can remove this line.
 #ActiveRecord::Migration.maintain_test_schema!
 ActiveRecord::Migration.check_pending! if defined?(ActiveRecord::Migration)
+
 RSpec.configure do |config|
   ActiveRecord::Base.logger.level = Logger::INFO
   ActionController::Base.logger.level = Logger::ERROR
